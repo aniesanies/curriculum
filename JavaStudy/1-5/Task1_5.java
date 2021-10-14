@@ -42,11 +42,9 @@ public class Task1_5 {
         // 九九表を表示 
           for (int k = 1; k <= 9; k++) { 
             // １つの段を表示 
+            System.out.print(k + "||");
+
             for (int j = 1; j <= 9; j++) {
-              // k * j のjが1の際行頭に段数と||を表示させる
-              if (j == 1){
-                System.out.print(k + "||");
-              } 
                 System.out.print((k * j) + "|"); 
             } 
 
