@@ -10,18 +10,8 @@ package study;
 
         // ② Calculator.javaのすべてのオーバーロードメソッド「plus」に適当な引数を与え、下記画像のよう出力されるようコーディングしなさい。
         // 尚、「どのクラスから呼び出しているか」を明確にするため、plus()には呼び出し元のキーワードを付与すること。
-		Calculator calculator = new Calculator();
-		
-		//int型の変数a, b, cを設定しようと思いましたが、冗長な記述に感じられたため数字を直接引数として使用しました。
-		
-		calculator.plus(10); {
-			System.out.println("plusメソッドの引数が一つの場合:" + calculator.plus(10));
+			System.out.println("plusメソッドの引数が一つの場合:" + plus(10));
+			System.out.println("plusメソッドの引数が一つの場合:" + plus(10, 20));
+			System.out.println("plusメソッドの引数が一つの場合:" + plus(10, 20, 30));
 		}
-		calculator.plus(10, 20); {
-			System.out.println("plusメソッドの引数が一つの場合:" + calculator.plus(10, 20));
-		}
-		calculator.plus(10, 20, 30); {
-			System.out.println("plusメソッドの引数が一つの場合:" + calculator.plus(10, 20, 30));
-		}
-    }
 }
