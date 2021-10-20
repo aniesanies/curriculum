@@ -34,8 +34,8 @@
 }
 
 .right-upper-left{
-  height: 150px;
   width: 150px;
+  height: 150px;
   background-color: black;
   float:left;
 }
@@ -47,8 +47,8 @@
 }
 
 .upper2{
-  height: 100px;
   width: 150px;
+  height: 100px;
   background-color: #0093b7;
 }
 
