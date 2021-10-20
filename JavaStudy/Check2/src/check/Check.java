@@ -6,12 +6,12 @@ public class Check {
 	private static String lastName = "聖七";
 	
 	public void printName(String firstName, String lastName){
-		System.out.println("printlnメソッド→" + Check.firstName + Check.lastName);
+		System.out.println("printlnメソッド→" + firstName + lastName);
 	}
 
 	public static void main(String[] args) {
 		Check check = new Check();
-		check.printName(Check.firstName, Check.lastName);
+		check.printName(firstName, lastName);
 		
 		Pet pet = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
 		pet.introduce();
