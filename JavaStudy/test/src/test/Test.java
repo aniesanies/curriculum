@@ -47,16 +47,16 @@ public static void main(String[] args) {
 //Q1-5
 //参照テーブルに下記データを追加するSQL文を記載してください(回答のSQL文はコメントアウトすること)
 // id 1234, name Road, entrance_year 2017, section null
-
-	
-
-
+	Test statement = connection.createStatement();
+	String SQL = "INSERT into test(id, name, entrance_year, section) VALUES('1234', 'Road', '2017', null)";
+	statement.executeUpdate(SQL);
 
 //Q1-6
 //参照テーブルの下記データを削除するSQL文を記載してください(回答のSQL文はコメントアウトすること)
 // id 0001と0002のものを削除
-
-
+	String SQL = "DELETE * WHERE id == '0001' and id == '0002'";
+	statement.executeUpdate(SQL);
+	
 
 }
 }
