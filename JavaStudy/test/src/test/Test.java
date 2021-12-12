@@ -12,8 +12,7 @@ public static void main(String[] args) {
 // Q1-1
 // number配列0番目と3番目の合計値を出力しなさい
 
-	System.out.println(number[0]);
-	System.out.println(number[3]);
+	System.out.println(number[0] + number[3]);
 
 // Q1-2
 // number配列1番目と2番目との乗算を出力しなさい
@@ -47,15 +46,16 @@ public static void main(String[] args) {
 //Q1-5
 //参照テーブルに下記データを追加するSQL文を記載してください(回答のSQL文はコメントアウトすること)
 // id 1234, name Road, entrance_year 2017, section null
-	Test statement = connection.createStatement();
-	String SQL = "INSERT into test(id, name, entrance_year, section) VALUES('1234', 'Road', '2017', null)";
-	statement.executeUpdate(SQL);
+	//Test statement = connection.createStatement();
+	//String SQL = "INSERT into test(id, name, entrance_year, section) VALUES('1234', 'Road', '2017', null)";
+	//statement.executeUpdate(SQL);
 
 //Q1-6
 //参照テーブルの下記データを削除するSQL文を記載してください(回答のSQL文はコメントアウトすること)
 // id 0001と0002のものを削除
-	String SQL = "DELETE * WHERE id == '0001' and id == '0002'";
-	statement.executeUpdate(SQL);
+	//Test statement = connection.createStatement();
+	//String SQL = "DELETE FROM test WHERE id == '0001' or id == '0002'";
+	//statement.executeUpdate(SQL);
 	
 
 }

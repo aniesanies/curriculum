@@ -32,10 +32,10 @@ public class Check2 {
 
 //Q8　名前が１文字づつ表示されるメソッドnameOne()を作成すること
 	public void nameOne() {
-	String arr = ("firstName" + "lastName");
-	String[] strArray = arr.split("");
-	for(String s : strArray) {
-	System.out.println(s);
+		String arr = (firstName + lastName);
+		String[] strArray = arr.split("");
+		for( int i =0; i < strArray.length; i++) {
+			System.out.println(strArray[i]);
 	}
 	
 	}
